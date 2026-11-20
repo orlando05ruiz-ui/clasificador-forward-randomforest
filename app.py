@@ -338,7 +338,7 @@ for i, gen in enumerate(nombres_genes):
         )
 
 # Los ejemplos provienen exclusivamente de la base de prueba, no del entrenamiento.
-col_tipo, col_ejemplo = st.columns([1, 2])
+col_tipo, col_ejemplo = st.columns([1, 2], vertical_alignment="bottom")
 
 with col_tipo:
     st.selectbox(
@@ -348,7 +348,7 @@ with col_tipo:
     )
 
 with col_ejemplo:
-    st.write("")
+   
     st.button(
         "🎲 Cargar muestra de ejemplo",
         use_container_width=True,
